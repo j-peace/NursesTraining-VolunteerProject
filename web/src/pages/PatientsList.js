@@ -1,17 +1,33 @@
-import { Grid, Paper, TextField, Typography } from "@mui/material";
+import { Alert, Button, Grid, Paper, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+// import { Link } from "react-router-dom";
 import SimpleList from "../components/SimpleList";
 
 function PatientsList() {
+
+    const [showAlert, setShowAlert] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => { setShowAlert(true) }, 4000);
+    }, []);
+
     return (
-        <Box sx={{ pb: 7 }}>
-            <Box style={{ marginTop: '15vh', backgroundColor: '#C2EBFF' }}>
+        <Box>
+            <Box style={{ marginTop: '120px', backgroundColor: '#C2EBFF' }}>
+                <Alert variant="outlined" severity="info" hidden={showAlert}
+                    action={
+                        <Button color="inherit" size="small" onClick={() => setShowAlert(true)}>
+                            UNDO
+                        </Button>
+                    }>
+                    Choose a patient to initialize the appointment!
+                </Alert>
                 <Grid container className='d-flex justify-content-center' >
                     <SimpleList />
                 </Grid>
             </Box>
-            <Paper elevation={3} sx={{ position: 'fixed', top: 0, left: 0, right: 0, backgroundColor: '#005681' }}>
+            <Paper elevation={3} sx={{ position: 'fixed', top: 0, left: 0, right: 0, backgroundColor: '#005681', height: '120px' }}>
                 <Grid
                     container
                     direction="column"
