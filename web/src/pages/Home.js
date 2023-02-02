@@ -51,7 +51,7 @@ function Home() {
                         <Grid container className='d-flex justify-content-center' >
                             <Grid item xs={12} sm={10} md={8} lg={6} className="d-flex justify-content-center pt-3" >
                                 <Link to="/PatientsList" style={{ textDecoration: "none", width: '85%'}}>
-                                    <Button variant="contained" disableElevation style={{ width: '100%', height: '155%', backgroundColor: '#005681' }} >
+                                    <Button variant="contained" disableElevation style={{ width: '100%', height: '8vh', backgroundColor: '#005681' }} >
                                         Start game
                                     </Button>
                                 </Link>
