@@ -9,15 +9,16 @@ function PatientsList() {
     const [showAlert, setShowAlert] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => { setShowAlert(true) }, 4000);
+        setShowAlert(true)
+        setTimeout(() => { setShowAlert(false) }, 5000);
     }, []);
 
     return (
         <Box>
             <Box style={{ marginTop: '120px', backgroundColor: '#C2EBFF' }}>
-                <Alert variant="outlined" severity="info" hidden={showAlert}
+                <Alert variant="outlined" severity="info" hidden={!showAlert}
                     action={
-                        <Button color="inherit" size="small" onClick={() => setShowAlert(true)}>
+                        <Button color="inherit" size="small" onClick={() => setShowAlert(false)}>
                             UNDO
                         </Button>
                     }>

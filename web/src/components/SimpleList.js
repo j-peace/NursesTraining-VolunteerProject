@@ -11,167 +11,167 @@ export default function SimpleList() {
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6} lg={4} >
                         <Link to="/Patient" style={{ textDecoration: "none" }}>
-                            <SimpleListItem patientName={'Mr. Barnes Jhonson'} />
+                            <SimpleListItem cursor={'default'} patientName={'Mr. Barnes Jhonson'} />
                         </Link>
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >
-                        <SimpleListItem />
+                        <SimpleListItem cursor={'not-allowed'} />
                     </Grid>
                 </Grid>
             </List>
