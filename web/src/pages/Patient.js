@@ -1,6 +1,7 @@
 import { Alert, Button, Grid, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
+import { Shake } from 'reshake'
 import mrBarnes from '../assets/Barners.png'
 import bag from '../assets/briefcase.png'
 import clip1 from '../assets/list.png'
@@ -41,7 +42,18 @@ function Patient() {
                     <Grid item id="medicalKit"
                         xs={8} sm={6} md={4} lg={4} xl={4}>
                         {!showItems ?
-                            <img src={bag} style={{ width: '100%', animationDuration: '3s', animationName: 'slidein' }} onClick={() => setShowItems(true)} />
+                            <Shake
+                                h={6}
+                                v={4}
+                                r={0}
+                                dur={60}
+                                int={0.5}
+                                max={34}
+                                fixed={true}
+                                fixedStop={true}
+                                freez={true}>
+                                <img src={bag} style={{ width: '100%', animationDuration: '3s', animationName: 'slidein' }} onClick={() => setShowItems(true)} />
+                            </Shake>
                             : < Box backgroundColor={'#943c0c'} borderRadius={5} onClick={() => setShowItems(false)} >
                                 <Grid
                                     sx={{ mt: 2 }}
