@@ -1,0 +1,27 @@
+Personal Information
+    Name: Barners Jhonson
+    Age: 70
+    Gender: Male
+    Ethnicities: African American
+
+
+Diagnosis
+
+    Healing peripheral vascular ulcer on his right foot.
+
+    Evidence of infection
+    Clotting problems
+    Abnormal liver or kidney function
+    Impaired oxygen availability
+    electrolyte imbalances
+
+    Sepsis: Reagent
+
+
+Doctor's prescription
+    Antibiotics: Specific for sepsis
+    Wound healing peripheral vascular ulcer on right foot: Wet-to-dry dressings two times a day
+
+
+Discharge summary
+    Mr. Banks is Discharged. He must needs continue to care for his right foot at home twice a day with wet-dry dressings.}

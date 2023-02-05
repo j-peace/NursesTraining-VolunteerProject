@@ -4,10 +4,10 @@ import { useState } from "react";
 import { Shake } from 'reshake'
 import mrBarnes from '../assets/Barners.png'
 import bag from '../assets/briefcase.png'
-import clip1 from '../assets/list.png'
+import clip1 from '../assets/medical-record.png'
 import clip2 from '../assets/medical-checkup.png'
-import clip3 from '../assets/medical-record.png'
-import clip4 from '../assets/menu.png'
+import clip3 from '../assets/list.png'
+import clip4 from '../assets/health-checkup.png'
 
 function Patient() {
 
@@ -50,16 +50,16 @@ function Patient() {
                             < Box backgroundColor={'#943c0c'} borderRadius={5} style={{ width: '100%', borderColor: '#f4ac4c', borderStyle: 'solid'}} onClick={() => setShowItems(false)} >
                                 <Grid container spacing={3} justifyContent="center" alignItems="center" pt={3} pb={3}>
                                     <Grid item xs={5} sm={5}>
-                                        <img src={clip1} width={'100%'}/>
+                                        <img src={clip1} style={{width: '90%', cursor: 'pointer'}}/>
                                     </Grid>
                                     <Grid item xs={5} sm={5}>
-                                        <img src={clip2} width={'100%'}/>
+                                        <img src={clip2} style={{width: '100%', cursor: 'pointer'}}/>
                                     </Grid>
                                     <Grid item xs={5} sm={5}>
-                                        <img src={clip3} width={'100%'}/>
+                                        <img src={clip3} style={{width: '100%', cursor: 'pointer'}}/>
                                     </Grid>
                                     <Grid item xs={5} sm={5}>
-                                        <img src={clip4} width={'100%'}/>
+                                        <img src={clip4} style={{width: '96%', cursor: 'pointer'}}/>
                                     </Grid>
                                 </Grid>
                             </Box>
