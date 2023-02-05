@@ -8,7 +8,6 @@ import clip1 from '../assets/list.png'
 import clip2 from '../assets/medical-checkup.png'
 import clip3 from '../assets/medical-record.png'
 import clip4 from '../assets/menu.png'
-import AnimationTest from "../components/AnimationTest";
 
 function Patient() {
 
@@ -31,54 +30,41 @@ function Patient() {
                 <Grid container justifyContent="space-around" alignItems="center" padding={3} spacing={3} >
                     <Grid item id="patient"
                         xs={10} sm={8} md={6} lg={5} xl={5}>
-                        {/* xs, sm, md, lg, and xl. */}
                         <img
                             src={mrBarnes} style={{ width: '100%', borderRadius: 20, borderColor: '#f4ac4c', borderStyle: 'solid' }} />
                         <Button variant="contained" disableElevation style={{ height: '2.8rem', marginTop: '-8rem', backgroundColor: '#005681' }} onClick={() => setShowAlert(false)} >
                             Start appointment
                         </Button>
-                        {/* <AnimationTest /> */}
                     </Grid>
-                    <Grid item id="medicalKit"
-                        xs={8} sm={6} md={4} lg={4} xl={4}>
-                        {!showItems ?
-                            <Shake
-                                h={6}
-                                v={4}
-                                r={0}
-                                dur={60}
-                                int={0.5}
-                                max={34}
-                                fixed={true}
-                                fixedStop={true}
-                                freez={true}>
-                                <img src={bag} style={{ width: '100%', animationDuration: '3s', animationName: 'slidein' }} onClick={() => setShowItems(true)} />
+                    {!showItems ?
+                        <Grid item id="medicalKit"
+                            xs={8} sm={6} md={4} lg={4} xl={4}>
+                            <Shake active={false}
+                                h={0} v={45} r={2} dur={620} int={0.9} max={6} fixed={true} fixedStop={false} freez={false}>
+                                <img src={bag} style={{ width: '100%', cursor: "pointer" }} onClick={() => setShowItems(true)} />
                             </Shake>
-                            : < Box backgroundColor={'#943c0c'} borderRadius={5} onClick={() => setShowItems(false)} >
-                                <Grid
-                                    sx={{ mt: 2 }}
-                                    container
-                                    spacing={3}
-                                    direction="row"
-                                    justifyContent="center"
-                                    alignItems="center"
-                                    style={{ height: '50vh' }} >
-                                    <Grid item xs={6} >
-                                        <img src={clip1} style={{ height: '20vh' }} />
+                        </Grid>
+                        :
+                        <Grid item id="medicalKit"
+                            xs={11} sm={10} md={7} lg={5} xl={5} sx={{margin: 1}}>
+                            < Box backgroundColor={'#943c0c'} borderRadius={5} style={{ width: '100%', borderColor: '#f4ac4c', borderStyle: 'solid'}} onClick={() => setShowItems(false)} >
+                                <Grid container spacing={3} justifyContent="center" alignItems="center" pt={3} pb={3}>
+                                    <Grid item xs={5} sm={5}>
+                                        <img src={clip1} width={'100%'}/>
                                     </Grid>
-                                    <Grid item xs={6}>
-                                        <img src={clip2} style={{ height: '20vh' }} />
+                                    <Grid item xs={5} sm={5}>
+                                        <img src={clip2} width={'100%'}/>
                                     </Grid>
-                                    <Grid item xs={6}>
-                                        <img src={clip3} style={{ height: '20vh' }} />
+                                    <Grid item xs={5} sm={5}>
+                                        <img src={clip3} width={'100%'}/>
                                     </Grid>
-                                    <Grid item xs={6}>
-                                        <img src={clip4} style={{ height: '20vh' }} />
+                                    <Grid item xs={5} sm={5}>
+                                        <img src={clip4} width={'100%'}/>
                                     </Grid>
                                 </Grid>
                             </Box>
-                        }
-                    </Grid>
+                        </Grid>
+                    }
                 </Grid>
             </Box>
             <Paper id="navBar"
