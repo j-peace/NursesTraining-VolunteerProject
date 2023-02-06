@@ -80,8 +80,19 @@ function Patient() {
                                 </Box>
                                 : []}
                             {showDetails ?
-                                <Box backgroundColor={'red'} >
-                                    <Button onClick={() => { setShowDetails(false); setShowRecords(true) }} >close</Button>
+                                <Box backgroundColor={'#f4ac4c'} sx={{ borderRadius: 7, height: '37vh', p: 2}}>
+                                    <Typography variant="h5">
+                                        Personal Information
+                                    </Typography>
+                                    <Typography variant="h6">
+                                        Name: Barners Jhonson /n
+                                        Age: 70
+                                        Gender: Male
+                                        Ethnicities: African American
+                                    </Typography>
+                                    <Button variant="contained" disableElevation style={{ height: '2.8rem', backgroundColor: '#005681' }} onClick={() => { setShowDetails(false); setShowRecords(true) }}  >
+                                        Read
+                                    </Button>
                                 </Box>
                                 : []}
                         </Grid> : []}
