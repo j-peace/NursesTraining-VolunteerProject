@@ -19,9 +19,9 @@ Diagnosis
 
 
 Doctor's prescription
-    Antibiotics: Specific for sepsis
-    Wound healing peripheral vascular ulcer on right foot: Wet-to-dry dressings two times a day
+    Antibiotics: Follow the medical recipe.
+    Bandages: Wound healing peripheral vascular ulcer on right foot: Wet-to-dry dressings two times a day.
 
 
 Discharge summary
-    Mr. Banks is Discharged. He must needs continue to care for his right foot at home twice a day with wet-dry dressings.}
+    Mr. Banks is Discharged. He must needs continue to care for his right foot at home twice a day with wet-dry dressings.

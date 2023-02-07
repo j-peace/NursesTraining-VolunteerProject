@@ -8,6 +8,8 @@ import clip1 from '../assets/medical-record.png'
 import clip2 from '../assets/medical-checkup.png'
 import clip3 from '../assets/list.png'
 import clip4 from '../assets/health-checkup.png'
+import ClipboardDetails from "../components/ClipboardDetails";
+import ClipBoardImg from "../components/ClipBoardImg";
 
 function Patient() {
 
@@ -16,6 +18,8 @@ function Patient() {
     const [showItems, setShowItems] = useState(false);
     const [showRecords, setShowRecords] = useState(true);
     const [showDetails, setShowDetails] = useState(false);
+    const [recordType, setRecordType] = useState('');
+    const [mainBorder, setMainBorder] = useState('#f4ac4c')
 
 
     return (
@@ -33,8 +37,8 @@ function Patient() {
                     <Grid item id="patient"
                         xs={10} sm={8} md={6} lg={5} xl={5}>
                         <img
-                            src={mrBarnes} style={{ width: '100%', borderRadius: 20, borderColor: '#f4ac4c', borderStyle: 'solid' }} />
-                        <Button variant="contained" disableElevation style={{ height: '2.8rem', marginTop: '-8rem', backgroundColor: '#005681' }} onClick={() => setShowAlert(true)} >
+                            src={mrBarnes} style={{ width: '100%', borderRadius: 20, borderColor: mainBorder, borderStyle: 'solid' }} />
+                        <Button variant="contained" disableElevation style={{ height: '2.8rem', marginTop: '-8rem', backgroundColor: '#005681' }} onClick={() => {setShowAlert(true); setMainBorder('red')}} >
                             Start appointment
                         </Button>
                     </Grid>
@@ -52,48 +56,15 @@ function Patient() {
                             {showRecords ?
                                 < Box backgroundColor={'#943c0c'} borderRadius={5} style={{ width: '100%', borderColor: '#f4ac4c', borderStyle: 'solid' }}>
                                     <Grid container spacing={3} justifyContent="center" alignItems="center" pt={3} pb={3}>
-                                        <Grid item xs={5} sm={5}>
-                                            <Shake active={showAlert}
-                                                h={0} v={45} r={2} dur={620} int={0.9} max={6} fixed={true} fixedStop={false} freez={false}>
-                                                <img src={clip1} style={{ width: '90%', cursor: 'pointer' }} onClick={() => { setShowDetails(true); setShowRecords(false) }} />
-                                            </Shake>
-                                        </Grid>
-                                        <Grid item xs={5} sm={5}>
-                                            <Shake active={showAlert}
-                                                h={0} v={45} r={2} dur={620} int={0.9} max={6} fixed={true} fixedStop={false} freez={false}>
-                                                <img src={clip2} style={{ width: '100%', cursor: 'pointer' }} />
-                                            </Shake>
-                                        </Grid>
-                                        <Grid item xs={5} sm={5}>
-                                            <Shake active={showAlert}
-                                                h={0} v={45} r={2} dur={620} int={0.9} max={6} fixed={true} fixedStop={false} freez={false}>
-                                                <img src={clip3} style={{ width: '100%', cursor: 'pointer' }} />
-                                            </Shake>
-                                        </Grid>
-                                        <Grid item xs={5} sm={5}>
-                                            <Shake active={showAlert}
-                                                h={0} v={45} r={2} dur={620} int={0.9} max={6} fixed={true} fixedStop={false} freez={false}>
-                                                <img src={clip4} style={{ width: '96%', cursor: 'pointer' }} />
-                                            </Shake>
-                                        </Grid>
+                                        <ClipBoardImg clipWidth={'90%'} activeReshake={showAlert} clipImg={clip1} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('personal') }} />
+                                        <ClipBoardImg clipWidth={'100%'} activeReshake={showAlert} clipImg={clip2} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('diagnosis') }} />
+                                        <ClipBoardImg clipWidth={'100%'} activeReshake={showAlert} clipImg={clip3} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('prescription') }} />
+                                        <ClipBoardImg clipWidth={'96%'} activeReshake={showAlert} clipImg={clip4} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('summary') }} />
                                     </Grid>
                                 </Box>
                                 : []}
                             {showDetails ?
-                                <Box backgroundColor={'#f4ac4c'} sx={{ borderRadius: 7, height: '37vh', p: 2}}>
-                                    <Typography variant="h5">
-                                        Personal Information
-                                    </Typography>
-                                    <Typography variant="h6">
-                                        Name: Barners Jhonson /n
-                                        Age: 70
-                                        Gender: Male
-                                        Ethnicities: African American
-                                    </Typography>
-                                    <Button variant="contained" disableElevation style={{ height: '2.8rem', backgroundColor: '#005681' }} onClick={() => { setShowDetails(false); setShowRecords(true) }}  >
-                                        Read
-                                    </Button>
-                                </Box>
+                                <ClipboardDetails action={() => { setShowDetails(false); setShowRecords(true) }} recordType={recordType} />
                                 : []}
                         </Grid> : []}
                 </Grid>

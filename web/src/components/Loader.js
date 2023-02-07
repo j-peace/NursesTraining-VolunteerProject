@@ -2,8 +2,6 @@ import { Box, CircularProgress, Grid, Typography } from '@mui/material';
 import LogoRound from './LogoRound';
 
 function Loader(props) {
-
-
     
     return (
         <>
