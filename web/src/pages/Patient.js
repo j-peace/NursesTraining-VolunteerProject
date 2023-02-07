@@ -20,6 +20,11 @@ function Patient() {
     const [showDetails, setShowDetails] = useState(false);
     const [recordType, setRecordType] = useState('');
     const [mainBorder, setMainBorder] = useState('#f4ac4c')
+    const [checkedClip1, setCheckedClip1] = useState(true)
+    const [checkedClip2, setCheckedClip2] = useState(true)
+    const [checkedClip3, setCheckedClip3] = useState(true)
+    const [checkedClip4, setCheckedClip4] = useState(true)
+
 
     async function timeCloseErrorMsg(){              
         setTimeout(() => { closeErrorMsg() }, 4000);
@@ -65,10 +70,10 @@ function Patient() {
                             {showRecords ?
                                 < Box backgroundColor={'#943c0c'} borderRadius={5} style={{ width: '100%', borderColor: '#f4ac4c', borderStyle: 'solid' }}>
                                     <Grid container spacing={3} justifyContent="center" alignItems="center" pt={3} pb={3}>
-                                        <ClipBoardImg clipWidth={'90%'} activeReshake={showAlert} clipImg={clip1} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('personal') }} />
-                                        <ClipBoardImg clipWidth={'100%'} activeReshake={showAlert} clipImg={clip2} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('diagnosis') }} />
-                                        <ClipBoardImg clipWidth={'100%'} activeReshake={showAlert} clipImg={clip3} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('prescription') }} />
-                                        <ClipBoardImg clipWidth={'96%'} activeReshake={showAlert} clipImg={clip4} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('summary') }} />
+                                        <ClipBoardImg clipWidth={'90%'} activeReshake={showAlert} checked={checkedClip1} clipImg={clip1} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('personal'); setCheckedClip1(false) }} />
+                                        <ClipBoardImg clipWidth={'100%'} activeReshake={showAlert} checked={checkedClip2} clipImg={clip2} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('diagnosis'); setCheckedClip2(false) }} />
+                                        <ClipBoardImg clipWidth={'100%'} activeReshake={showAlert} checked={checkedClip3} clipImg={clip3} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('prescription'); setCheckedClip3(false) }} />
+                                        <ClipBoardImg clipWidth={'96%'} activeReshake={showAlert} checked={checkedClip4} clipImg={clip4} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('summary'); setCheckedClip4(false) }} />
                                     </Grid>
                                 </Box>
                                 : []}
