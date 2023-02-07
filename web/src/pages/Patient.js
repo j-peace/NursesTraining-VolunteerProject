@@ -13,46 +13,80 @@ import ClipBoardImg from "../components/ClipBoardImg";
 
 function Patient() {
 
+    const alertErrorMsg = "Before to get started, check if there are something in your bag that can help!"
+    const alertSuccesMsg = "You are able to start, please click on start appoiment!"
+    const [hiddenStartButton, setHiddenStartButton] = useState(false);
+
     const [showAlert, setShowAlert] = useState(false);
+    const [showAlertShake, setShowAlertShake] = useState(false);
+    const [alerMsg, setAlertMsg] = useState(alertErrorMsg);
+    const [alertType, setAlertType] = useState("error");
+
     const [showBag, setShowBag] = useState(true);
     const [showItems, setShowItems] = useState(false);
     const [showRecords, setShowRecords] = useState(true);
     const [showDetails, setShowDetails] = useState(false);
+
     const [recordType, setRecordType] = useState('');
-    const [mainBorder, setMainBorder] = useState('#f4ac4c')
-    const [checkedClip1, setCheckedClip1] = useState(true)
-    const [checkedClip2, setCheckedClip2] = useState(true)
-    const [checkedClip3, setCheckedClip3] = useState(true)
-    const [checkedClip4, setCheckedClip4] = useState(true)
+    const [mainBorder, setMainBorder] = useState('#f4ac4c');
+
+    const [checkedClip1, setCheckedClip1] = useState(true);
+    const [checkedClip2, setCheckedClip2] = useState(true);
+    const [checkedClip3, setCheckedClip3] = useState(true);
+    const [checkedClip4, setCheckedClip4] = useState(true);
 
 
-    async function timeCloseErrorMsg(){              
+
+    function timeCloseErrorMsg() {
         setTimeout(() => { closeErrorMsg() }, 4000);
     }
 
-    async function closeErrorMsg(){
+    function closeErrorMsg() {
         setShowAlert(false);
+        setShowAlertShake(false);
         setMainBorder('#f4ac4c')
+    }
+
+    function authorizeStart() {
+        if (!checkedClip1 && !checkedClip2 && !checkedClip3 && !checkedClip4) {
+            setAlertType("success")
+            setAlertMsg(alertSuccesMsg)
+            setShowAlert(true);
+            timeCloseErrorMsg()
+        }
+    }
+
+    function startAppoiment() {
+        if (alertType === "success") {
+            setMainBorder('green')
+            setHiddenStartButton(true)
+        }
+        else {
+            setShowAlert(true);
+            setMainBorder('red');
+            setShowAlertShake(true);
+            timeCloseErrorMsg();
+        }
     }
 
 
     return (
         <Box >
             <Box style={{ marginTop: '100px', backgroundColor: '#C2EBFF' }} height={'120vh'}>
-                <Alert variant="outlined" severity="error" hidden={!showAlert}
+                <Alert variant="outlined" severity={alertType} hidden={!showAlert}
                     action={
-                        <Button color="inherit" size="small" onClick={() => {setShowAlert(false); closeErrorMsg()} }>
+                        <Button color="inherit" size="small" onClick={() => { setShowAlert(false); closeErrorMsg() }}>
                             UNDO
                         </Button>
                     }>
-                    Before to get started, check if there are something in your bag that can help!
+                    {alerMsg}
                 </Alert>
                 <Grid container justifyContent="space-around" alignItems="center" padding={3} spacing={3} >
                     <Grid item id="patient"
                         xs={10} sm={8} md={6} lg={5} xl={5}>
                         <img
                             src={mrBarnes} style={{ width: '100%', borderRadius: 20, borderColor: mainBorder, borderStyle: 'solid' }} />
-                        <Button variant="contained" disableElevation style={{ height: '2.8rem', marginTop: '-8rem', backgroundColor: '#005681' }} onClick={() => {setShowAlert(true); setMainBorder('red'); timeCloseErrorMsg()}} >
+                        <Button variant="contained" disableElevation hidden={hiddenStartButton} style={{ height: '2.8rem', marginTop: '-8rem', backgroundColor: '#005681' }} onClick={() => startAppoiment()} >
                             Start appointment
                         </Button>
                     </Grid>
@@ -70,15 +104,15 @@ function Patient() {
                             {showRecords ?
                                 < Box backgroundColor={'#943c0c'} borderRadius={5} style={{ width: '100%', borderColor: '#f4ac4c', borderStyle: 'solid' }}>
                                     <Grid container spacing={3} justifyContent="center" alignItems="center" pt={3} pb={3}>
-                                        <ClipBoardImg clipWidth={'90%'} activeReshake={showAlert} checked={checkedClip1} clipImg={clip1} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('personal'); setCheckedClip1(false) }} />
-                                        <ClipBoardImg clipWidth={'100%'} activeReshake={showAlert} checked={checkedClip2} clipImg={clip2} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('diagnosis'); setCheckedClip2(false) }} />
-                                        <ClipBoardImg clipWidth={'100%'} activeReshake={showAlert} checked={checkedClip3} clipImg={clip3} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('prescription'); setCheckedClip3(false) }} />
-                                        <ClipBoardImg clipWidth={'96%'} activeReshake={showAlert} checked={checkedClip4} clipImg={clip4} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('summary'); setCheckedClip4(false) }} />
+                                        <ClipBoardImg clipWidth={'90%'} activeReshake={showAlertShake} checked={checkedClip1} clipImg={clip1} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('personal'); setCheckedClip1(false) }} />
+                                        <ClipBoardImg clipWidth={'100%'} activeReshake={showAlertShake} checked={checkedClip2} clipImg={clip2} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('diagnosis'); setCheckedClip2(false) }} />
+                                        <ClipBoardImg clipWidth={'100%'} activeReshake={showAlertShake} checked={checkedClip3} clipImg={clip3} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('prescription'); setCheckedClip3(false) }} />
+                                        <ClipBoardImg clipWidth={'96%'} activeReshake={showAlertShake} checked={checkedClip4} clipImg={clip4} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('summary'); setCheckedClip4(false) }} />
                                     </Grid>
                                 </Box>
                                 : []}
                             {showDetails ?
-                                <ClipboardDetails action={() => { setShowDetails(false); setShowRecords(true) }} recordType={recordType} />
+                                <ClipboardDetails action={() => { setShowDetails(false); setShowRecords(true); authorizeStart() }} recordType={recordType} />
                                 : []}
                         </Grid> : []}
                 </Grid>
