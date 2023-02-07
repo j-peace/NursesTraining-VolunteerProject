@@ -21,13 +21,22 @@ function Patient() {
     const [recordType, setRecordType] = useState('');
     const [mainBorder, setMainBorder] = useState('#f4ac4c')
 
+    async function timeCloseErrorMsg(){              
+        setTimeout(() => { closeErrorMsg() }, 4000);
+    }
+
+    async function closeErrorMsg(){
+        setShowAlert(false);
+        setMainBorder('#f4ac4c')
+    }
+
 
     return (
         <Box >
             <Box style={{ marginTop: '100px', backgroundColor: '#C2EBFF' }} height={'120vh'}>
                 <Alert variant="outlined" severity="error" hidden={!showAlert}
                     action={
-                        <Button color="inherit" size="small" onClick={() => setShowAlert(false)}>
+                        <Button color="inherit" size="small" onClick={() => {setShowAlert(false); closeErrorMsg()} }>
                             UNDO
                         </Button>
                     }>
@@ -38,7 +47,7 @@ function Patient() {
                         xs={10} sm={8} md={6} lg={5} xl={5}>
                         <img
                             src={mrBarnes} style={{ width: '100%', borderRadius: 20, borderColor: mainBorder, borderStyle: 'solid' }} />
-                        <Button variant="contained" disableElevation style={{ height: '2.8rem', marginTop: '-8rem', backgroundColor: '#005681' }} onClick={() => {setShowAlert(true); setMainBorder('red')}} >
+                        <Button variant="contained" disableElevation style={{ height: '2.8rem', marginTop: '-8rem', backgroundColor: '#005681' }} onClick={() => {setShowAlert(true); setMainBorder('red'); timeCloseErrorMsg()}} >
                             Start appointment
                         </Button>
                     </Grid>
@@ -47,7 +56,7 @@ function Patient() {
                             xs={8} sm={6} md={4} lg={4} xl={4}>
                             <Shake active={showAlert}
                                 h={0} v={45} r={2} dur={620} int={0.9} max={6} fixed={true} fixedStop={false} freez={false}>
-                                <img src={bag} style={{ width: '100%', cursor: "pointer" }} onClick={() => { setShowBag(false); setShowItems(true) }} />
+                                <img src={bag} style={{ width: '100%', cursor: "pointer" }} onClick={() => { setShowBag(false); setShowItems(true); closeErrorMsg() }} />
                             </Shake>
                         </Grid> : <></>}
                     {showItems ?
