@@ -37,14 +37,14 @@ function Patient() {
 
 
 
-    function timeCloseErrorMsg() {
+    async function timeCloseErrorMsg() {
         setTimeout(() => { closeErrorMsg() }, 4000);
     }
 
-    function closeErrorMsg() {
+    async function closeErrorMsg() {
         setShowAlert(false);
         setShowAlertShake(false);
-        setMainBorder('#f4ac4c')
+        if (alertType === "error") setMainBorder('#f4ac4c')
     }
 
     function authorizeStart() {
@@ -52,7 +52,7 @@ function Patient() {
             setAlertType("success")
             setAlertMsg(alertSuccesMsg)
             setShowAlert(true);
-            timeCloseErrorMsg()
+            setTimeout(() => { setShowAlert(false) }, 5000);
         }
     }
 
@@ -60,6 +60,7 @@ function Patient() {
         if (alertType === "success") {
             setMainBorder('green')
             setHiddenStartButton(true)
+            setShowItems(false)
         }
         else {
             setShowAlert(true);
