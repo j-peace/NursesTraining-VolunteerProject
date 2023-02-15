@@ -10,6 +10,7 @@ import clip3 from '../assets/list.png'
 import clip4 from '../assets/health-checkup.png'
 import ClipboardDetails from "../components/ClipboardDetails";
 import ClipBoardImg from "../components/ClipBoardImg";
+import TypeWriter from "../components/TypeWriter";
 
 function Patient() {
 
@@ -26,6 +27,7 @@ function Patient() {
     const [showItems, setShowItems] = useState(false);
     const [showRecords, setShowRecords] = useState(true);
     const [showDetails, setShowDetails] = useState(false);
+    const [showQuestions, setShowQuestions] = useState(false);
 
     const [recordType, setRecordType] = useState('');
     const [mainBorder, setMainBorder] = useState('#f4ac4c');
@@ -37,11 +39,11 @@ function Patient() {
 
 
 
-    async function timeCloseErrorMsg() {
+    function timeCloseErrorMsg() {
         setTimeout(() => { closeErrorMsg() }, 4000);
     }
 
-    async function closeErrorMsg() {
+    function closeErrorMsg() {
         setShowAlert(false);
         setShowAlertShake(false);
         if (alertType === "error") setMainBorder('#f4ac4c')
@@ -58,9 +60,11 @@ function Patient() {
 
     function startAppoiment() {
         if (alertType === "success") {
-            setMainBorder('green')
-            setHiddenStartButton(true)
-            setShowItems(false)
+            setMainBorder('#005681');
+            setHiddenStartButton(true);
+            setShowRecords(false);
+            setShowAlert(false);
+            setShowQuestions(true);
         }
         else {
             setShowAlert(true);
@@ -69,7 +73,6 @@ function Patient() {
             timeCloseErrorMsg();
         }
     }
-
 
     return (
         <Box >
@@ -115,7 +118,15 @@ function Patient() {
                             {showDetails ?
                                 <ClipboardDetails action={() => { setShowDetails(false); setShowRecords(true); authorizeStart() }} recordType={recordType} />
                                 : []}
-                        </Grid> : []}
+                            {showQuestions ?
+                                < Box backgroundColor={'#dadbdd'} borderRadius={5} style={{ width: '100%', borderColor: '#005681', borderStyle: 'solid' }}>
+                                    <Grid container spacing={3} justifyContent="center" alignItems="center" pt={3} pb={3}>
+                                        <TypeWriter typingSpeed={40} />
+                                    </Grid>
+                                </Box>
+                                : []}
+                        </Grid> : []
+                    }
                 </Grid>
             </Box>
             <Paper id="navBar"
