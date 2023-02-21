@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import { useState } from "react";
 import { Shake } from 'reshake'
 import mrBarnes from '../assets/Barners.png'
-import bag from '../assets/briefcase.png'
+import bag from '../assets/bag2.png'
 import clip1 from '../assets/medical-record.png'
 import clip2 from '../assets/medical-checkup.png'
 import clip3 from '../assets/list.png'
