@@ -90,7 +90,7 @@ function Patient() {
                         xs={10} sm={8} md={6} lg={5} xl={5}>
                         <img
                             src={mrBarnes} style={{ width: '100%', borderRadius: 20, borderColor: mainBorder, borderStyle: 'solid' }} />
-                        <Button variant="contained" disableElevation hidden={hiddenStartButton} style={{ height: '3.2rem', marginTop: '-8rem', backgroundColor: '#005681', boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)'}} onClick={() => startAppoiment()} >
+                        <Button variant="contained" disableElevation hidden={hiddenStartButton} style={{ height:'3.5vw', minHeight: '45px' , marginTop: '-8rem', backgroundColor: '#005681', boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)'}} onClick={() => startAppoiment()} >
                             Start appointment
                         </Button>
                     </Grid>

@@ -44,7 +44,7 @@ export default function ClipboardDetails(props) {
             <Grid container justifyContent="center">
                 <Grid item xs={8}>
                     <Button onClick={props.action}
-                        variant="contained" disableElevation style={{ width: '100%', height: '2.8rem', backgroundColor: '#005681' }} >
+                        variant="contained" disableElevation style={{ width: '100%', height:'3.5vw', minHeight: '45px' , backgroundColor: '#005681' , boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)'}} >
                         Read
                     </Button>
                 </Grid>
