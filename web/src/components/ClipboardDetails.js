@@ -18,7 +18,7 @@ export default function ClipboardDetails(props) {
             {props.recordType === 'diagnosis' ?
                 <>
                     <Typography variant="h4" fontFamily={'"Open Sans", sans-serif'} fontWeight={'bold'}>
-                        Diagnosis</Typography>
+                    Medical diagnosis</Typography>
                     <Typography variant="h6" fontFamily={'"Open Sans", sans-serif'}>Healing peripheral vascular ulcer on his right foot.</Typography>
                     <Typography variant="body2" fontFamily={'"Open Sans", sans-serif'}>Evidence of infection, clotting problems, abnormal liver or kidney function, impaired oxygen availability, electrolyte imbalances.</Typography>
                     <Typography variant="h6" color='red' fontFamily={'"Open Sans", sans-serif'} marginRight={1}><Box fontWeight={'bold'} display='inline'>Sepsis:</Box> Reagent</Typography>
