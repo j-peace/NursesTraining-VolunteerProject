@@ -1,0 +1,19 @@
+You: Hi Mr Barners!
+Mr. Barnes: Hi!
+
+You: according to your medical record, you are discharged and should follow these wound care instructions with wet-to-dry dressings two times a day.
+
+Mr. Barners after reading the instructions starts to cry 😭.
+
+You: Mr. Barnes, are you okay?
+
+Mr. Barnes: My wife passed away three months ago. I do not drive. I have no way of changing bandages or getting supplies.
+
+Which of the following options is the best way to respond to Mr. Barners?
+
+(a) “Mr. Barnes, I am sorry for your loss. There are instructions in the pamphlet related to wound care. My nurse will make some phone calls to home health to see if they can help with the dressing changes.”
+(b) “Mr. Barnes, I am sorry for your loss. What resources do you have to help? Is there someone who can help with the dressing changes?”
+(c) “Mr. Barnes, I am sorry for your loss. My nurse is going to send you home with two weeks' worth of dressings. Before you leave, let's identify who can help you with the dressing changes. They can call our office if they have any problems. We will call to check on you in a few days and see how you are doing.”
+(d) “Mr. Barnes, I am sorry for your loss. We can contact the senior center and see if there are any resources to help with your meals and dressing changes. We will be calling to check on you in a couple of days. Here is the office number to call if you need anything.”
+
+Answer - All the answers are helpful, but the most appropriate answer would be (c). Sending the patient home with the correct supplies and resources helps to prevent the recurrence of infections and ultimately developing sepsis.

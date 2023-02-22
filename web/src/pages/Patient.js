@@ -11,6 +11,7 @@ import clip4 from '../assets/health-checkup.png'
 import ClipboardDetails from "../components/ClipboardDetails";
 import ClipBoardImg from "../components/ClipBoardImg";
 import TypeWriter from "../components/TypeWriter";
+import QuestionBarners from "../components/QuestionBarners";
 
 function Patient() {
 
@@ -90,7 +91,7 @@ function Patient() {
                         xs={10} sm={8} md={6} lg={5} xl={5}>
                         <img
                             src={mrBarnes} style={{ width: '100%', borderRadius: 20, borderColor: mainBorder, borderStyle: 'solid' }} />
-                        <Button variant="contained" disableElevation hidden={hiddenStartButton} style={{ height:'3.5vw', minHeight: '45px' , minWidth: '35%' , marginTop: '-8rem', backgroundColor: '#005681', boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)'}} onClick={() => startAppoiment()} >
+                        <Button variant="contained" disableElevation hidden={hiddenStartButton} style={{ height: '3.5vw', minHeight: '45px', minWidth: '35%', marginTop: '-8rem', backgroundColor: '#005681', boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)' }} onClick={() => startAppoiment()} >
                             Start appointment
                         </Button>
                     </Grid>
@@ -106,20 +107,18 @@ function Patient() {
                         <Grid item id="medicalKit"
                             xs={11} sm={10} md={7} lg={5} xl={5} sx={{ margin: 1 }} >
                             {showRecords ?
-                                    <Grid id="openBag" container borderRadius={5} pt={3} pb={3} backgroundColor={'#4bd49c'} style={{justifyContent: "center", alignItems: "center", borderColor: '#049971', borderStyle: 'solid'}} >
-                                        <ClipBoardImg clipTitle={'Personal'} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip1} clipImg={clip1} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('personal'); setCheckedClip1(false) }} />
-                                        <ClipBoardImg clipTitle={'Diagnosis'} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip2} clipImg={clip2} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('diagnosis'); setCheckedClip2(false) }} />
-                                        <ClipBoardImg clipTitle={"Prescription"} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip3} clipImg={clip3} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('prescription'); setCheckedClip3(false) }} />
-                                        <ClipBoardImg clipTitle={'Summary'} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip4} clipImg={clip4} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('summary'); setCheckedClip4(false) }} />
-                                    </Grid>
+                                <Grid id="openBag" container borderRadius={5} pt={3} pb={3} backgroundColor={'#4bd49c'} style={{ justifyContent: "center", alignItems: "center", borderColor: '#049971', borderStyle: 'solid' }} >
+                                    <ClipBoardImg clipTitle={'Personal'} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip1} clipImg={clip1} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('personal'); setCheckedClip1(false) }} />
+                                    <ClipBoardImg clipTitle={'Diagnosis'} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip2} clipImg={clip2} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('diagnosis'); setCheckedClip2(false) }} />
+                                    <ClipBoardImg clipTitle={"Prescription"} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip3} clipImg={clip3} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('prescription'); setCheckedClip3(false) }} />
+                                    <ClipBoardImg clipTitle={'Summary'} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip4} clipImg={clip4} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('summary'); setCheckedClip4(false) }} />
+                                </Grid>
                                 : []}
                             {showDetails ?
                                 <ClipboardDetails action={() => { setShowDetails(false); setShowRecords(true); authorizeStart() }} recordType={recordType} />
                                 : []}
                             {showQuestions ?
-                                    <Grid container justifyContent="center"  backgroundColor={'#dadbdd'}  borderRadius={5}  alignItems="center" p={1} mt={3} pb={5} style={{ width: '100%', borderColor: '#005681', borderStyle: 'solid' }}>
-                                        <TypeWriter typingSpeed={40} />
-                                    </Grid>
+                                <QuestionBarners />
                                 : []}
                         </Grid> : []
                     }
