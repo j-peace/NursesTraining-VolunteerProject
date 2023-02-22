@@ -106,7 +106,7 @@ function Patient() {
                         <Grid item id="medicalKit"
                             xs={11} sm={10} md={7} lg={5} xl={5} sx={{ margin: 1 }}>
                             {showRecords ?
-                                < Box backgroundColor={'#4bd49c'} borderRadius={5} style={{borderColor: '#040404', borderStyle: 'solid' }}>
+                                < Box backgroundColor={'#4bd49c'} borderRadius={5} style={{borderColor: '#049971', borderStyle: 'solid' }}>
                                     <Grid container spacing={4} justifyContent="center" alignItems="center" pt={3} pb={3}>
                                         <ClipBoardImg clipTitle={'Personal'} clipWidth={'80%'} activeReshake={showAlertShake} checked={checkedClip1} clipImg={clip1} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('personal'); setCheckedClip1(false) }} />
                                         <ClipBoardImg clipTitle={'Diagnosis'} clipWidth={'80%'} activeReshake={showAlertShake} checked={checkedClip2} clipImg={clip2} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('diagnosis'); setCheckedClip2(false) }} />
