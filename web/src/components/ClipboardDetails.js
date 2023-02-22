@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 
 export default function ClipboardDetails(props) {
     return (
-        <Box backgroundColor={'#f4ac4c'} sx={{ borderRadius: 7, height: '37vh', p: 2, display: 'grid', justifyContent: 'space-around', height: '30vw', minHeight: '45vh' }} >
+        <Box backgroundColor={'#dadbdd'} sx={{ borderRadius: 7, height: '37vh', p: 2, display: 'grid', justifyContent: 'space-around', height: '30vw', minHeight: '45vh', borderColor: '#005681', borderStyle: 'solid'}} >
             {props.recordType === 'personal' ?
                 <>
                     <Typography variant="h4" fontFamily={'"Open Sans", sans-serif'} fontWeight={'bold'}  >

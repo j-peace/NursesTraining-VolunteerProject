@@ -30,7 +30,7 @@ function Patient() {
     const [showQuestions, setShowQuestions] = useState(false);
 
     const [recordType, setRecordType] = useState('');
-    const [mainBorder, setMainBorder] = useState('#f4ac4c');
+    const [mainBorder, setMainBorder] = useState('#dadbdd');
 
     const [checkedClip1, setCheckedClip1] = useState(true);
     const [checkedClip2, setCheckedClip2] = useState(true);
@@ -46,7 +46,7 @@ function Patient() {
     function closeErrorMsg() {
         setShowAlert(false);
         setShowAlertShake(false);
-        if (alertType === "error") setMainBorder('#f4ac4c')
+        if (alertType === "error") setMainBorder('#dadbdd')
     }
 
     function authorizeStart() {
