@@ -117,7 +117,7 @@ function Patient() {
                                 <ClipboardDetails action={() => { setShowDetails(false); setShowRecords(true); authorizeStart() }} recordType={recordType} />
                                 : []}
                             {showQuestions ?
-                                    <Grid container spacing={3} justifyContent="center"  backgroundColor={'#dadbdd'}  borderRadius={5}  alignItems="center" mt={3} pb={5} style={{ width: '100%', borderColor: '#005681', borderStyle: 'solid' }}>
+                                    <Grid container justifyContent="center"  backgroundColor={'#dadbdd'}  borderRadius={5}  alignItems="center" p={1} mt={3} pb={5} style={{ width: '100%', borderColor: '#005681', borderStyle: 'solid' }}>
                                         <TypeWriter typingSpeed={40} />
                                     </Grid>
                                 : []}
