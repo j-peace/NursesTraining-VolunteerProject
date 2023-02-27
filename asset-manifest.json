@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/sepsis-guide/static/js/main.db031a07.js",
+    "static/js/787.d1d4a2c2.chunk.js": "/sepsis-guide/static/js/787.d1d4a2c2.chunk.js",
+    "static/media/Barners.png": "/sepsis-guide/static/media/Barners.6bfefb605e026c8eca1c.png",
+    "static/media/PPAHS_Logo_blue.jpg": "/sepsis-guide/static/media/PPAHS_Logo_blue.762354081bf392acbfc0.jpg",
+    "static/media/checked.png": "/sepsis-guide/static/media/checked.ba3922a176cdfec71358.png",
+    "static/media/list.png": "/sepsis-guide/static/media/list.7d1cfe694ad3d21fce7b.png",
+    "static/media/medical-record.png": "/sepsis-guide/static/media/medical-record.ffe96141f543848a27b1.png",
+    "static/media/medical-checkup.png": "/sepsis-guide/static/media/medical-checkup.ba2e8654d4452e3d1073.png",
+    "static/media/health-checkup.png": "/sepsis-guide/static/media/health-checkup.977f3d54bdbdefaac094.png",
+    "index.html": "/sepsis-guide/index.html",
+    "main.db031a07.js.map": "/sepsis-guide/static/js/main.db031a07.js.map",
+    "787.d1d4a2c2.chunk.js.map": "/sepsis-guide/static/js/787.d1d4a2c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.db031a07.js"
+  ]
+}
