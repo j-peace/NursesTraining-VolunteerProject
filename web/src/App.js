@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 import Home from './pages/Home'
 import PatientsList from './pages/PatientsList'
@@ -8,13 +8,13 @@ import Patient from './pages/Patient'
 
 function App () {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />}  />
         <Route path="/PatientsList" element={<PatientsList />}/>
         <Route path="/Patient" element={<Patient />}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
