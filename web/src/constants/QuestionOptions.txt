@@ -9,7 +9,7 @@ You: Mr. Barnes, are you okay?
 
 Mr. Barnes: My wife passed away three months ago. I do not drive. I have no way of changing bandages or getting supplies.
 
-Which of the following options is the best way to respond to Mr. Barners?
+Choose between the following options what is the best way to respond to Mr. Barners...
 
 (a) “Mr. Barnes, I am sorry for your loss. There are instructions in the pamphlet related to wound care. My nurse will make some phone calls to home health to see if they can help with the dressing changes.”
 (b) “Mr. Barnes, I am sorry for your loss. What resources do you have to help? Is there someone who can help with the dressing changes?”

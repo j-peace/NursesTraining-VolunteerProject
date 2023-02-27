@@ -1,6 +1,8 @@
+import { Typography } from '@mui/material';
+import { Box } from '@mui/system';
 import React, { useState, useEffect } from 'react';
 
-export default function TypeWriter(props, { typingSpeed = 100 }){
+export default function TypeWriter(props, { typingSpeed = 40 }) {
 
   const text = props.text
 
@@ -24,10 +26,12 @@ export default function TypeWriter(props, { typingSpeed = 100 }){
   }, [text, typingSpeed]);
 
   return (
-    <>
-      <div hidden={props.hidden}>{typedText}</div>
-    </>
-
+    <Typography variant="h6" fontFamily={'"Open Sans", sans-serif'} marginRight={1} hidden={props.hidden}>
+      <Box fontWeight={'bold'} display='inline' mr={1}>
+        {props.boldText}
+      </Box>
+      {typedText}
+    </Typography>
   )
 };
 
