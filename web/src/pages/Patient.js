@@ -24,11 +24,11 @@ function Patient() {
     const [alerMsg, setAlertMsg] = useState(alertErrorMsg);
     const [alertType, setAlertType] = useState("error");
 
-    const [showBag, setShowBag] = useState(true);
-    const [showItems, setShowItems] = useState(false);
-    const [showRecords, setShowRecords] = useState(true);
+    const [showBag, setShowBag] = useState(true); //change to true after finalize the question
+    const [showItems, setShowItems] = useState(false); //change to false after finalize the question
+    const [showRecords, setShowRecords] = useState(true); //change to true after finalize the question
     const [showDetails, setShowDetails] = useState(false);
-    const [showQuestions, setShowQuestions] = useState(false);
+    const [showQuestions, setShowQuestions] = useState(false); //change to false after finalize the question
 
     const [recordType, setRecordType] = useState('');
     const [mainBorder, setMainBorder] = useState('#dadbdd');
