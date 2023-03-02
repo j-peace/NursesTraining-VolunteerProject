@@ -16,7 +16,7 @@ function PatientsList() {
     return (
         <Box>
             <Box style={{ marginTop: '120px', backgroundColor: '#C2EBFF' }}>
-                <Alert variant="outlined" severity="info" hidden={!showAlert}
+                <Alert severity="warning" hidden={!showAlert}
                     action={
                         <Button color="inherit" size="small" onClick={() => setShowAlert(false)}>
                             UNDO

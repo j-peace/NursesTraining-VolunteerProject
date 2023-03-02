@@ -78,7 +78,7 @@ function Patient() {
     return (
         <Box >
             <Box style={{ marginTop: '100px', backgroundColor: '#C2EBFF' }} height={'120vh'}>
-                <Alert variant="outlined" severity={alertType} hidden={!showAlert}
+                <Alert severity={alertType} hidden={!showAlert}
                     action={
                         <Button color="inherit" size="small" onClick={() => { setShowAlert(false); closeErrorMsg() }}>
                             UNDO
