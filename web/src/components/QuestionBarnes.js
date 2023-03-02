@@ -17,6 +17,7 @@ export default function QuestionBarnes() {
     const [type7, setType7] = useState(true)
     const [hideButton, setHideButton] = useState(false)
     const [hideQuestion, setHideQuestion] = useState(true)
+    const [textButton, setTextButton] = useState('NEXT')
 
     const [typeEnd1, setTypeEnd1] = useState(true)
     const [typeEnd2, setTypeEnd2] = useState(false)
@@ -75,6 +76,7 @@ export default function QuestionBarnes() {
                 setTypeEnd6(true);
                 setType7(false);
                 setTextNumber(textNumber + 1);
+                setTextButton('Show options')
                 console.log(textNumber, del)
                 break;
             case 8:
@@ -94,8 +96,8 @@ export default function QuestionBarnes() {
             <TypeWriter end={!type6} hidden={type6} boldText={'Mr. Barnes:'} text={'My wife passed away three months ago. I do not drive. I have no way of changing bandages or getting supplies 😭.'} />
             <TypeWriter end={!type7} hidden={type7} boldText={'Choose between the following options what is the best way to respond to Mr. Barnes...'} text={''} />
             <Button hidden={hideButton} onClick={() => nextQuestion(textNumber)}
-                variant="contained" disableElevation style={{ height: '3.5vw', minHeight: '45px', backgroundColor: '#005681', boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)' }} >
-                NEXT
+                variant="contained" disableElevation style={{ height: '2.5vw', minHeight: '28px', width: '70%', marginLeft: '15%', backgroundColor: '#005681', boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)' }} >
+                {textButton}
             </Button>
             <Questions hidden={hideQuestion}/>
         </Box>
