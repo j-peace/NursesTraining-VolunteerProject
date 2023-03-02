@@ -12,6 +12,7 @@ import ClipboardDetails from "../components/ClipboardDetails";
 import ClipBoardImg from "../components/ClipBoardImg";
 import TypeWriter from "../components/TypeWriter";
 import QuestionBarnes from "../components/QuestionBarnes";
+import { useMediaQuery } from '@material-ui/core';
 
 function Patient() {
 
@@ -38,7 +39,7 @@ function Patient() {
     const [checkedClip3, setCheckedClip3] = useState(true);
     const [checkedClip4, setCheckedClip4] = useState(true);
 
-
+    const isXsScreen = useMediaQuery('(max-width:450px)')
 
     function timeCloseErrorMsg() {
         setTimeout(() => { closeErrorMsg() }, 4000);
@@ -110,7 +111,7 @@ function Patient() {
                                 <Grid id="openBag" container borderRadius={5} pt={3} pb={3} backgroundColor={'#4bd49c'} style={{ justifyContent: "center", alignItems: "center", borderColor: '#049971', borderStyle: 'solid' }} >
                                     <ClipBoardImg clipTitle={'Personal'} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip1} clipImg={clip1} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('personal'); setCheckedClip1(false) }} />
                                     <ClipBoardImg clipTitle={'Diagnosis'} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip2} clipImg={clip2} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('diagnosis'); setCheckedClip2(false) }} />
-                                    <ClipBoardImg clipTitle={"Prescription"} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip3} clipImg={clip3} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('prescription'); setCheckedClip3(false) }} />
+                                    <ClipBoardImg clipTitle={isXsScreen ? "Prescrip" : "Prescription"} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip3} clipImg={clip3} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('prescription'); setCheckedClip3(false) }} />
                                     <ClipBoardImg clipTitle={'Summary'} clipWidth={'70%'} clipMargin={'15%'} activeReshake={showAlertShake} checked={checkedClip4} clipImg={clip4} actionClip={() => { setShowDetails(true); setShowRecords(false); setRecordType('summary'); setCheckedClip4(false) }} />
                                 </Grid>
                                 : []}
