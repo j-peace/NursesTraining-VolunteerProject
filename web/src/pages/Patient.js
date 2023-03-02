@@ -2,7 +2,7 @@ import { Alert, Button, Grid, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
 import { Shake } from 'reshake'
-import mrBarnes from '../assets/Barners.png'
+import mrBarnes from '../assets/Barnes.png'
 import bag from '../assets/bag2.png'
 import clip1 from '../assets/medical-record.png'
 import clip2 from '../assets/medical-checkup.png'
@@ -11,7 +11,7 @@ import clip4 from '../assets/health-checkup.png'
 import ClipboardDetails from "../components/ClipboardDetails";
 import ClipBoardImg from "../components/ClipBoardImg";
 import TypeWriter from "../components/TypeWriter";
-import QuestionBarners from "../components/QuestionBarners";
+import QuestionBarnes from "../components/QuestionBarnes";
 
 function Patient() {
 
@@ -118,7 +118,7 @@ function Patient() {
                                 <ClipboardDetails action={() => { setShowDetails(false); setShowRecords(true); authorizeStart() }} recordType={recordType} />
                                 : []}
                             {showQuestions ?
-                                <QuestionBarners />
+                                <QuestionBarnes />
                                 : []}
                         </Grid> : []
                     }
@@ -140,7 +140,7 @@ function Patient() {
                     </Grid>
                     <Grid item className="d-flex justify-content-center pt-2">
                         <Typography variant="h6" fontFamily={'"Open Sans", sans-serif'} color={'#C2EBFF'} >
-                            Mr. Barners Jhonson
+                            Mr. Barnes Jhonson
                         </Typography>
                     </Grid>
                 </Grid>

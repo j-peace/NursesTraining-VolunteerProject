@@ -9,7 +9,7 @@ export default function ClipboardDetails(props) {
                     <Typography variant="h4" fontFamily={'"Open Sans", sans-serif'} fontWeight={'bold'}  >
                         Personal Information
                     </Typography>
-                    <Typography variant="h6" fontFamily={'"Open Sans", sans-serif'} marginRight={1}><Box fontWeight={'bold'} display='inline'>Name:</Box>  Barners Jhonson </Typography>
+                    <Typography variant="h6" fontFamily={'"Open Sans", sans-serif'} marginRight={1}><Box fontWeight={'bold'} display='inline'>Name:</Box>  Barnes Jhonson </Typography>
                     <Typography variant="h6" fontFamily={'"Open Sans", sans-serif'} marginRight={1}><Box fontWeight={'bold'} display='inline'>Age:</Box> 70 </Typography>
                     <Typography variant="h6" fontFamily={'"Open Sans", sans-serif'} marginRight={1}><Box fontWeight={'bold'} display='inline'>Gender:</Box> Male </Typography>
                     <Typography variant="h6" fontFamily={'"Open Sans", sans-serif'} marginRight={1}><Box fontWeight={'bold'} display='inline'>Ethnicities:</Box>  African American </Typography>

@@ -1,5 +1,5 @@
 Personal Information
-    Name: Barners Jhonson
+    Name: Barnes Jhonson
     Age: 70
     Gender: Male
     Ethnicities: African American
