@@ -15,7 +15,8 @@ export default function QuestionBarners() {
     const [type5, setType5] = useState(true)
     const [type6, setType6] = useState(true)
     const [type7, setType7] = useState(true)
-    const [hidddeButton, setHidddeButton] = useState(false)
+    const [hideButton, setHideButton] = useState(false)
+    const [hideQuestion, setHideQuestion] = useState(true)
 
     const [typeEnd1, setTypeEnd1] = useState(true)
     const [typeEnd2, setTypeEnd2] = useState(false)
@@ -34,7 +35,8 @@ export default function QuestionBarners() {
         setType4(true)
         setType5(true)
         setType6(true)
-        setHidddeButton(true)
+        setHideButton(true)
+        setHideQuestion(false)
     }
 
     function nextQuestion() {
@@ -91,11 +93,11 @@ export default function QuestionBarners() {
             <TypeWriter end={!type5} hidden={type5} boldText={'You:'} text={'Mr. Barnes, are you okay?'} />
             <TypeWriter end={!type6} hidden={type6} boldText={'Mr. Barnes:'} text={'My wife passed away three months ago. I do not drive. I have no way of changing bandages or getting supplies 😭.'} />
             <TypeWriter end={!type7} hidden={type7} boldText={'Choose between the following options what is the best way to respond to Mr. Barners...'} text={''} />
-            <Button hidden={hidddeButton} onClick={() => nextQuestion(textNumber)}
+            <Button hidden={hideButton} onClick={() => nextQuestion(textNumber)}
                 variant="contained" disableElevation style={{ height: '3.5vw', minHeight: '45px', backgroundColor: '#005681', boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)' }} >
                 NEXT
             </Button>
-            <Questions />
+            <Questions hidden={hideQuestion}/>
         </Box>
     )
 }
