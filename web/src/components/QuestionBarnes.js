@@ -87,14 +87,14 @@ export default function QuestionBarnes() {
     }
 
     return (
-        <Box justifyContent="center" backgroundColor={'#dadbdd'} borderRadius={5} alignItems="center" p={1} mt={3} pb={5} style={{ width: '100%', borderColor: '#005681', borderStyle: 'solid' }}>
-            <TypeWriter end={!type2} hidden={type1} boldText={'You:'} text={'Hi Mr. Barnes!'} />
-            <TypeWriter end={!type3} hidden={type2} boldText={'Mr. Barnes:'} text={'Hi!'} />
-            <TypeWriter end={!type4} hidden={type3} boldText={'You:'} text={'According to your medical record, you are discharged and should follow these wound care instructions with wet-to-dry dressings two times a day.'} />
-            <TypeWriter end={!type4} hidden={type4} boldText={'Mr. Barnes'} text={' ...starts to cry 😭.'} />
-            <TypeWriter end={!type5} hidden={type5} boldText={'You:'} text={'Mr. Barnes, are you okay?'} />
-            <TypeWriter end={!type6} hidden={type6} boldText={'Mr. Barnes:'} text={'My wife passed away three months ago. I do not drive. I have no way of changing bandages or getting supplies 😭.'} />
-            <TypeWriter end={!type7} hidden={type7} boldText={'Choose between the following options what is the best way to respond to Mr. Barnes...'} text={''} />
+        <Box backgroundColor={'#dadbdd'} borderRadius={5} alignItems="center" p={1} mt={3} pb={5} style={{ width: '100%', borderColor: '#005681', borderStyle: 'solid' }}>
+            <TypeWriter end={!type2} hidden={type1} boldText={'You:'} fixedText={''} text={'Hi Mr. Barnes!'} />
+            <TypeWriter end={!type3} hidden={type2} boldText={'Mr. Barnes:'} fixedText={''} text={'Hi!'} />
+            <TypeWriter end={!type4} hidden={type3} boldText={'You:'} fixedText={'According to your medical record, you are discharged and should follow these wound care instructions with '} text={'wet-to-dry dressings two times a day.'} />
+            <TypeWriter end={!type4} hidden={type4} boldText={'Mr. Barnes'} fixedText={''} text={' ...starts to cry 😭.'} />
+            <TypeWriter end={!type5} hidden={type5} boldText={'You:'} fixedText={''} text={'Mr. Barnes, are you okay?'} />
+            <TypeWriter end={!type6} hidden={type6} boldText={'Mr. Barnes:'} fixedText={'My wife passed away three months ago. I do not drive. I have no way of changing '} text={'bandages or getting supplies 😭.'} />
+            <TypeWriter end={!type7} hidden={type7} boldText={'Choose between the following options what is the best way to respond to Mr. Barnes...'} fixedText={''} text={''} />
             <Button hidden={hideButton} onClick={() => nextQuestion(textNumber)}
                 variant="contained" disableElevation style={{ height: '2.5vw', minHeight: '28px', width: '70%', marginLeft: '15%', backgroundColor: '#005681', boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)' }} >
                 {textButton}

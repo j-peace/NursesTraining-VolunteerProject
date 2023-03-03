@@ -2,24 +2,11 @@ import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState, useEffect } from 'react';
 
-export default function TypeWriter(props, { typingSpeed = 40 }) {
+export default function TypeWriter(props) {
 
+  let typingSpeed = 40 
   const text = props.text
   const [writedText, setWritedText] = useState('...')
-
-  // if (props.end) { console.log(props.end); setWriteddText(text) }
-
-
-  // function type() {
-  //   let i = 0;
-  //   if (i >= text.length) return;
-  //   else {
-  //     setWritedText(text.slice(0, i));
-  //     console.log('here', i, writedText)
-  //     i++
-  //     return
-  //   }
-  // }
 
   useEffect(() => {
     let i = 0;
@@ -42,7 +29,7 @@ export default function TypeWriter(props, { typingSpeed = 40 }) {
       <Box fontWeight={'bold'} display='inline' mr={1}>
         {props.boldText}
       </Box>
-      {writedText}
+      {props.fixedText + writedText}
     </Typography>
   )
 };
