@@ -1,3 +1,4 @@
+import '../styles.css';
 import { Alert, Button, Grid, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
