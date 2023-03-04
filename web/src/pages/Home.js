@@ -14,11 +14,14 @@ function Home() {
 
     return (
         <>
-            <Loader hidden={showLoader} />
+
+            {showLoader ?
+                <Loader />
+                :
             <Box className="" style={{ backgroundColor: '#C2EBFF', height: '100vh' }}>
                 <Grid
                     container
-                    direction="column"
+                    direction={"column"}
                     justifyContent="flex-start"
                     alignItems="stretch"
                     style={{ height: '100vh', width: '100vw' }}
@@ -64,7 +67,7 @@ function Home() {
                         </Typography>
                     </Grid>
                 </Grid>
-            </Box>
+            </Box>}
         </>
     )
 
