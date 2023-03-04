@@ -87,7 +87,7 @@ export default function QuestionBarnes() {
     }
 
     return (
-        <Box backgroundColor={'#dadbdd'} borderRadius={5} alignItems="center" p={1} mt={3} pb={5} style={{ width: '100%', borderColor: '#005681', borderStyle: 'solid' }}>
+        <Box alignItems="center" style={{ width: '100%'}}>
             <TypeWriter end={!type2} hidden={type1} boldText={'You:'} fixedText={''} text={'Hi Mr. Barnes!'} />
             <TypeWriter end={!type3} hidden={type2} boldText={'Mr. Barnes:'} fixedText={''} text={'Hi!'} />
             <TypeWriter end={!type4} hidden={type3} boldText={'You:'} fixedText={'According to your medical record, you are discharged and should follow these wound care instructions with '} text={'wet-to-dry dressings two times a day.'} />
