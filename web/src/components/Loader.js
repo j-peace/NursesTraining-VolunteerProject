@@ -21,10 +21,12 @@ function Loader() {
                     <Grid item className="d-flex justify-content-center pt-5 pb-5">
                         <LogoRound />
                     </Grid>
-                    <Grid item className="d-flex justify-content-space-around" alignItems={'center'}>
+                    <Grid item className="d-flex justify-content-space-around" alignItems={'center'} justifyContent={'center'}>
                         <Typography variant="h5" fontFamily={'"Open Sans", sans-serif'} className="p-4 text-center" width={'70%'} fontWeight={'light'} alignItems={'center'} color={'#C2EBFF'}>
                             Welcome to sepsis care guide.
                         </Typography>
+                    </Grid>
+                    <Grid item className="d-flex justify-content-space-around" alignItems={'center'} justifyContent={'center'}>
                         <CircularProgress />
                     </Grid>
                 </Grid>
