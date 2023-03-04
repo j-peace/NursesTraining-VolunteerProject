@@ -79,7 +79,7 @@ function Patient() {
 
     return (
         <Box >
-            <Box style={{ marginTop: '100px', backgroundColor: '#C2EBFF' }} height={'120vh'}>
+            <Box style={{ marginTop: '100px', backgroundColor: '#C2EBFF' }} >
                 <Alert severity={alertType} hidden={!showAlert}
                     action={
                         <Button color="inherit" size="small" onClick={() => { setShowAlert(false); closeErrorMsg() }}>
@@ -88,11 +88,11 @@ function Patient() {
                     }>
                     {alerMsg}
                 </Alert>
-                <Grid container justifyContent="space-around" alignItems="center" padding={3} spacing={3} >
+                <Grid container justifyContent="space-around" padding={3} spacing={3} >
                     <Grid item id="patient"
                         xs={10} sm={8} md={6} lg={5} xl={5}>
                         <img
-                            src={mrBarnes} style={{ width: '100%', borderRadius: 20, borderColor: mainBorder, borderStyle: 'solid' }} />
+                            src={mrBarnes} style={{ width: '100%', borderRadius: 20, marginTop: '1.5rem', borderColor: mainBorder, borderStyle: 'solid' }} />
                         <Button variant="contained" disableElevation hidden={hiddenStartButton} style={{ height: '3.5vw', minHeight: '45px', minWidth: '35%', marginTop: '-8rem', backgroundColor: '#005681', boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)' }} onClick={() => startAppoiment()} >
                             Start appointment
                         </Button>
