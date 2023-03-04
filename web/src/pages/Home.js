@@ -33,7 +33,7 @@ function Home() {
                     </Grid>
                     <Grid item >
                         <Grid container className='d-flex justify-content-center pt-4' >
-                            <Grid item xs={12} sm={10} md={8} lg={6} className="d-flex justify-content-space-around" direction={'column'} alignItems={'center'}>
+                            <Grid item xs={12} sm={10} md={8} lg={6} className="d-flex justify-content-space-around" alignItems={'center'}>
                                 <Typography variant="h5" fontFamily={'"Open Sans", sans-serif'} className="text-center" width={'80%'} fontWeight={'light'} alignItems={'center'} color={'#005681'}>
                                     Different patient scenarios to examine your own biases and preconceptions.
                                 </Typography>
