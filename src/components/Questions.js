@@ -2,7 +2,7 @@ import { useState } from "react";
 import Question from "./Question";
 import Grid from '@mui/material/Grid'
 import { Box } from "@mui/system";
-import { Alert, Button } from "@mui/material";
+import { Alert } from "@mui/material";
 
 export default function Questions(props) {
 

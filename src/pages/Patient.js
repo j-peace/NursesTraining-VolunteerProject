@@ -11,7 +11,6 @@ import clip3 from '../assets/list.png'
 import clip4 from '../assets/health-checkup.png'
 import ClipboardDetails from "../components/ClipboardDetails";
 import ClipBoardImg from "../components/ClipBoardImg";
-import TypeWriter from "../components/TypeWriter";
 import QuestionBarnes from "../components/QuestionBarnes";
 import { useMediaQuery } from '@material-ui/core';
 

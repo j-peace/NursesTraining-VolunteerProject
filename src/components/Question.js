@@ -1,13 +1,8 @@
-import { useEffect, useState } from "react";
 import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import { Box } from "@mui/system";
-import { Grid, Typography } from "@mui/material";
-import { green } from "@mui/material/colors";
-
-
+import { Typography } from "@mui/material";
 
 export default function Question(props) {
 
