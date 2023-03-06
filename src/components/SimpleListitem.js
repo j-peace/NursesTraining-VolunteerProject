@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
@@ -15,37 +15,33 @@ export default function SimpleListItem(props) {
 
     const [defaultName, setDefaultName] = useState('');
     const [initials, setInitials] = useState('MJ');
-    const [defaultCursor, setDefaultCursor] = useState('not-allowed')
-
 
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
 
-    function firstName(gender) {
+    const firstName = useCallback((gender) => {
         if (gender === 1) {
             return 'Ms. ' + femaleNames.data[getRandomInt(999)]
         } else {
             return 'Mr. ' + maleNames.data[getRandomInt(999)]
         }
-    }
-
-    async function refreshName() {
-        let patient = firstName(getRandomInt(2) + 1) + ' ' + lastNames.data[getRandomInt(999)]
-        setDefaultName(patient)
-
-        let nameArray = props.patientName ? props.patientName.split(' ') : patient.split(' ');
-        setInitials(nameArray[1][0] + nameArray[2][0])
-    }
+    }, []);
+    
 
     useEffect(() => {
-        if(props.patientName) setDefaultCursor('pointer');
-        refreshName();
-    }, []);
+        let patient = firstName(getRandomInt(2) + 1) + ' ' + lastNames.data[getRandomInt(999)];
+        setDefaultName(patient);
+      
+        let nameArray = props.patientName ? props.patientName.split(' ') : patient.split(' ');
+        setInitials(nameArray[1][0] + nameArray[2][0]);
+      }, [firstName, setInitials, props.patientName]);
+      
+
 
     return (
-        <Box style={{ backgroundColor: "white" }} sx={{boxShadow: 3, borderRadius: 2, "&:hover": {boxShadow: 6,transform: "translateY(-2px)"}}} >
-            <ListItem direction="row" alignItems="center" sx={{ boxShadow: 3, borderRadius: 2, "&:hover": {boxShadow: 6,transform: "translateY(-2px)", backgroundColor: '#F5F5F5', cursor: defaultCursor}}} >
+        <Box style={{ backgroundColor: "white" }} sx={{ boxShadow: 3, borderRadius: 2, "&:hover": { boxShadow: 6, transform: "translateY(-2px)" } }} >
+            <ListItem direction="row" alignItems="center" sx={{ boxShadow: 3, borderRadius: 2, "&:hover": { boxShadow: 6, transform: "translateY(-2px)", backgroundColor: '#F5F5F5', cursor: props.patientName ? 'pointer' : 'not-allowed' } }} >
                 <ListItemAvatar>
                     {props.patientName ? <Avatar alt={initials} sx={{ bgcolor: green[800] }}>{initials}</Avatar> : <Avatar alt={initials} >{initials}</Avatar>}
                 </ListItemAvatar>

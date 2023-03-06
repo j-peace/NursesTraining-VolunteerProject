@@ -4,24 +4,21 @@ import React, { useState, useEffect } from 'react';
 
 export default function TypeWriter(props) {
 
-  let typingSpeed = 40 
-  const text = props.text
   const [writedText, setWritedText] = useState('...')
 
   useEffect(() => {
     let i = 0;
     function type() {
-      if (props.end) { setWritedText(text) }
-      setWritedText(text.slice(0, i));
-      if (i < text.length) {
-        setTimeout(() => { i++; type() }, typingSpeed);
+      setWritedText(props.text.slice(0, i));
+      if (i < props.text.length) {
+        setTimeout(() => { i++; type() }, 40);
       }
     };
     type();
   }, [props.hidden]);
 
   useEffect(() => {
-    if (props.end) { setWritedText(text) }
+    if (props.end) { setWritedText(props.text) }
   }, [props.end]);
 
   return (
