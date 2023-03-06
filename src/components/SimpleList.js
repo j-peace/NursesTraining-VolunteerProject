@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function SimpleList() {
 
     return (
-        <Grid item xs={12} sm={10} md={12} className="d-flex justify-content-space-around" direction={'column'} alignItems={'center'}>
+        <Grid item xs={12} sm={10} md={12} className="d-flex justify-content-center" alignItems={'center'}>
             <List sx={{ width: '85%', mt: 2 }}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6} lg={4} >
