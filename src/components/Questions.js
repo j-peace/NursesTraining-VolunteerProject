@@ -18,7 +18,7 @@ export default function Questions(props) {
     }
 
     return (
-        <Box className="d-flex justify-content-space-around" direction={'column'} alignItems={'center'} hidden={props.hidden}>
+        <Box className="d-flex" direction={'column'} alignItems={'center'} hidden={props.hidden}>
             <Grid container spacing={3}>
                 <Grid item>
                     <Alert severity={correctAnswer} hidden={!showAlert}>
