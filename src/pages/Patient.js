@@ -91,7 +91,7 @@ function Patient() {
                     <Grid item id="patient"
                         xs={10} sm={8} md={6} lg={5} xl={5}>
                         <img
-                            src={mrBarnes} style={{ width: '100%', borderRadius: 20, marginTop: '1.5rem', borderColor: mainBorder, borderStyle: 'solid' }} />
+                            src={mrBarnes} alt='Mr Barnes' style={{ width: '100%', borderRadius: 20, marginTop: '1.5rem', borderColor: mainBorder, borderStyle: 'solid' }} />
                         <Button variant="contained" disableElevation hidden={hiddenStartButton} style={{ height: '3.5vw', minHeight: '45px', minWidth: '35%', marginTop: '-8rem', backgroundColor: '#005681', boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)' }} onClick={() => startAppoiment()} >
                             Start appointment
                         </Button>
@@ -101,7 +101,7 @@ function Patient() {
                             xs={8} sm={6} md={4} lg={4} xl={4}>
                             <Shake active={showAlert}
                                 h={0} v={45} r={2} dur={620} int={0.9} max={6} fixed={true} fixedStop={false} freez={false}>
-                                <img src={bag} style={{ width: '100%', cursor: "pointer" }} onClick={() => { setShowBag(false); setShowItems(true); closeErrorMsg() }} />
+                                <img src={bag} alt='bag' style={{ width: '100%', cursor: "pointer" }} onClick={() => { setShowBag(false); setShowItems(true); closeErrorMsg() }} />
                             </Shake>
                         </Grid> : <></>}
                     {showItems ?
