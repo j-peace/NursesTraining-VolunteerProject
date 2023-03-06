@@ -46,38 +46,32 @@ export default function QuestionBarnes() {
                 setTypeEnd1(true);
                 setType2(false);
                 setTextNumber(textNumber + 1);
-                console.log(textNumber, del)
                 break;
             case 3:
                 setTypeEnd2(true);
                 setType3(false);
                 setTextNumber(textNumber + 1);
-                console.log(textNumber, del)
                 break;
             case 4:
                 setTypeEnd3(true);
                 setType4(false);
                 setTextNumber(textNumber + 1);
-                console.log(textNumber, del)
                 break;
             case 5:
                 setTypeEnd4(true);
                 setType5(false);
                 setTextNumber(textNumber + 1);
-                console.log(textNumber, del)
                 break;
             case 6:
                 setTypeEnd5(true);
                 setType6(false);
                 setTextNumber(textNumber + 1);
-                console.log(textNumber, del)
                 break;
             case 7:
                 setTypeEnd6(true);
                 setType7(false);
                 setTextNumber(textNumber + 1);
                 setTextButton('Show options')
-                console.log(textNumber, del)
                 break;
             case 8:
                 setTypeEnd7(true);

@@ -21,7 +21,7 @@ export default function TypeWriter(props) {
   }, [props.hidden]);
 
   useEffect(() => {
-    if (props.end) { setWritedText(text);  console.log('hereeee')}
+    if (props.end) { setWritedText(text) }
   }, [props.end]);
 
   return (
