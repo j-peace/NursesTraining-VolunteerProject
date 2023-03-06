@@ -19,16 +19,6 @@ export default function QuestionBarnes() {
     const [hideQuestion, setHideQuestion] = useState(true)
     const [textButton, setTextButton] = useState('NEXT')
 
-    const [typeEnd1, setTypeEnd1] = useState(true)
-    const [typeEnd2, setTypeEnd2] = useState(false)
-    const [typeEnd3, setTypeEnd3] = useState(false)
-    const [typeEnd4, setTypeEnd4] = useState(false)
-    const [typeEnd5, setTypeEnd5] = useState(false)
-    const [typeEnd6, setTypeEnd6] = useState(false)
-    const [typeEnd7, setTypeEnd7] = useState(false)
-
-    let del = `${type1} ${type2} ${type3} ${type4} ${type5} ${type6}`
-
     function answerQuestion(){
         setType1(true)
         setType2(true)
@@ -43,38 +33,31 @@ export default function QuestionBarnes() {
     function nextQuestion() {
         switch (textNumber) {
             case 2:
-                setTypeEnd1(true);
                 setType2(false);
                 setTextNumber(textNumber + 1);
                 break;
             case 3:
-                setTypeEnd2(true);
                 setType3(false);
                 setTextNumber(textNumber + 1);
                 break;
             case 4:
-                setTypeEnd3(true);
                 setType4(false);
                 setTextNumber(textNumber + 1);
                 break;
             case 5:
-                setTypeEnd4(true);
                 setType5(false);
                 setTextNumber(textNumber + 1);
                 break;
             case 6:
-                setTypeEnd5(true);
                 setType6(false);
                 setTextNumber(textNumber + 1);
                 break;
             case 7:
-                setTypeEnd6(true);
                 setType7(false);
                 setTextNumber(textNumber + 1);
                 setTextButton('Show options')
                 break;
             case 8:
-                setTypeEnd7(true);
                 answerQuestion()
                 break;
         }
