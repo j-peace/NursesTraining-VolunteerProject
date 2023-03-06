@@ -45,7 +45,7 @@ export default function SimpleListItem(props) {
 
     return (
         <Box style={{ backgroundColor: "white" }} sx={{boxShadow: 3, borderRadius: 2, "&:hover": {boxShadow: 6,transform: "translateY(-2px)"}}} >
-            <ListItem direction="row" justifyContent="center" alignItems="center" sx={{ boxShadow: 3, borderRadius: 2, "&:hover": {boxShadow: 6,transform: "translateY(-2px)", backgroundColor: '#F5F5F5', cursor: defaultCursor}}} >
+            <ListItem direction="row" alignItems="center" sx={{ boxShadow: 3, borderRadius: 2, "&:hover": {boxShadow: 6,transform: "translateY(-2px)", backgroundColor: '#F5F5F5', cursor: defaultCursor}}} >
                 <ListItemAvatar>
                     {props.patientName ? <Avatar alt={initials} sx={{ bgcolor: green[800] }}>{initials}</Avatar> : <Avatar alt={initials} >{initials}</Avatar>}
                 </ListItemAvatar>
@@ -53,7 +53,6 @@ export default function SimpleListItem(props) {
                     <Grid
                         container
                         direction="row"
-                        justifyContent="center"
                         alignItems="center"
                     >
                         <Grid item xs={12} xl={6}>
@@ -66,7 +65,6 @@ export default function SimpleListItem(props) {
                     : <Grid
                         container
                         direction="row"
-                        justifyContent="center"
                         alignItems="center"
                     >
                         <Grid item xs={12} xl={6}>

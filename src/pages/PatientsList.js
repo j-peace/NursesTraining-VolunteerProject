@@ -1,7 +1,6 @@
 import { Alert, Button, Grid, Paper, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
 import SimpleList from "../components/SimpleList";
 
 function PatientsList() {
@@ -31,8 +30,7 @@ function PatientsList() {
             <Paper elevation={3} sx={{ position: 'fixed', top: 0, left: 0, right: 0, backgroundColor: '#005681', height: '120px' }}>
                 <Grid
                     container
-                    direction="column"
-                    justifyContent="flex-start"
+                    direction={"column"}
                     alignItems="stretch"
                     style={{ width: '100vw' }}
                 >
