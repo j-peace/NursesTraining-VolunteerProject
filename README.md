@@ -30,4 +30,4 @@
 </p>
 
 <h2>Website</h2>
-<p>You can find the website at the following link: <a href="https://tiagopazhs.github.io/sepsis-guide"</a></p>
+<p>You can find the website at the following link: <a href="https://tiagopazhs.github.io/sepsis-guide"></a></p>
