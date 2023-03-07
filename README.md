@@ -1,6 +1,6 @@
 # Volunteer project
 
-##Training in sepsis management for nurses.
+## Training in sepsis management for nurses.
 
 Project building from scratch (including the prototype) together with the founders and nurses of PPHAS New Jersey.
 
