@@ -8,20 +8,20 @@
 </p>
 <h4>Screenshots:</h4>
 
-<div>
- <div style="display: flex; justify-content: space-around; width: 100%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/screenShot1.jpeg" alt="screenshot 1" style="height: 12vw;">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/screenShot2.jpeg" alt="screenshot 2" style="height: 12vw;">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/screenShot3.jpeg" alt="screenshot 3" style="height: 12vw;">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/screenShot4.jpeg" alt="screenshot 4" style="height: 12vw;">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/screenShot5.jpeg" alt="screenshot 5" style="height: 12vw;">
-  </div>
- <div style="display: flex; justify-content: space-around; width: 100%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/screenShot6.jpeg" alt="screenshot 6" style="height: 12vw;">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/screenShot7.jpeg" alt="screenshot 7" style="height: 12vw;">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/screenShot8.jpeg" alt="screenshot 8" style="height: 12vw;">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/screenShot9.jpeg" alt="screenshot 9" style="height: 12vw;">
-  </div>
+
+<div style="width: 90%; margin-left: 5%; display: flex; justify-content: center;">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss1.jpeg" alt="ss 1" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss2.jpeg" alt="ss 2" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss3.jpeg" alt="ss 3" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss4.jpeg" alt="ss 4" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss5.jpeg" alt="ss 5" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss6.jpeg" alt="ss 6" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss7.jpeg" alt="ss 7" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss8.jpeg" alt="ss 8" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss9.jpeg" alt="ss 9" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss10.jpeg" alt="ss 10" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss11.jpeg" alt="ss 11" style="width: 16%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss12.jpeg" alt="ss 12" style="width: 16%">
 </div>
 
 <h2>Technologies</h2>
