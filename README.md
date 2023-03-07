@@ -3,31 +3,28 @@
 <h2>Purpose</h2>
 <p>Sepsis is a serious medical condition that can be life-threatening if not treated promptly. The purpose of this project is to provide nurses with a guide on sepsis treatment.</p>
 <h4>Demonstration:</h4>
-<p>
-  <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/sampleGif.gif" alt="sample gif">
+<p align="center">
+  <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/sampleGif.gif" alt="sample gif" style="width: 75%">
 </p>
 <h4>Screenshots:</h4>
 
-
-<div style="width: 90%; margin-left: 5%; display: flex; justify-content: center;">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss1.jpeg" alt="ss 1" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss2.jpeg" alt="ss 2" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss3.jpeg" alt="ss 3" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss4.jpeg" alt="ss 4" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss5.jpeg" alt="ss 5" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss6.jpeg" alt="ss 6" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss7.jpeg" alt="ss 7" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss8.jpeg" alt="ss 8" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss9.jpeg" alt="ss 9" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss10.jpeg" alt="ss 10" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss11.jpeg" alt="ss 11" style="width: 16%">
-    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss12.jpeg" alt="ss 12" style="width: 16%">
-</div>
+<p align="center">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss1.jpeg" alt="ss 1" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss2.jpeg" alt="ss 2" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss3.jpeg" alt="ss 3" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss4.jpeg" alt="ss 4" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss5.jpeg" alt="ss 5" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss6.jpeg" alt="ss 6" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss7.jpeg" alt="ss 7" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss8.jpeg" alt="ss 8" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss9.jpeg" alt="ss 9" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss10.jpeg" alt="ss 10" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss11.jpeg" alt="ss 11" style="width: 14%">
+    <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/ss/ss12.jpeg" alt="ss 12" style="width: 14%">
+</p>
 
 <h2>Technologies</h2>
 <p>We used the following technologies to build this project:</p>
-<p>
-  <a href="https://skillicons.dev">
+<p align="center">
     <img src="https://skillicons.dev/icons?i=react,js,html,css,materialui,git" />
-  </a>
 </p>
