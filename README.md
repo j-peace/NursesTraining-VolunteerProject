@@ -31,3 +31,28 @@
 
 <h2>Website</h2>
 <p>You can find the website at the following link: <a href="https://tiagopazhs.github.io/sepsis-guide/">https://tiagopazhs.github.io/sepsis-guide/</a></p>
+
+## Instalation
+
+<p>Clone the repository in your local machine:
+
+```python
+git clone https://github.com/tiagopazhs/NursesTraining_VolunteerProject
+```
+
+<p>Navigate to the main root: 
+
+```python
+cd NursesTraining_VolunteerProject
+```
+
+<p>Install the dependencies of the project:
+
+```python
+npm install
+```
+
+Start the aplication:
+```python
+npm start
+```
