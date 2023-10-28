@@ -30,20 +30,20 @@
 </p>
 
 <h2>Website</h2>
-<p>You can find the website at the following link: <a href="https://tiagopazhs.github.io/sepsis-guide/">https://tiagopazhs.github.io/sepsis-guide/</a></p>
+<p>You can find the website at the following link: <a href="https://tiagopazhs.github.io/sepsis-guide/">https://tiagopazhs.github.io/NursesTraining-VolunteerProject/</a></p>
 
 ## Instalation
 
 <p>Clone the repository in your local machine:
 
 ```python
-git clone https://github.com/tiagopazhs/NursesTraining_VolunteerProject
+git clone https://github.com/tiagopazhs/NursesTraining-VolunteerProject
 ```
 
 <p>Navigate to the main root: 
 
 ```python
-cd NursesTraining_VolunteerProject
+cd NursesTraining-VolunteerProject
 ```
 
 <p>Install the dependencies of the project:
