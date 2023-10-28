@@ -30,7 +30,7 @@
 </p>
 
 <h2>Website</h2>
-<p>You can find the website at the following link: <a href="https://tiagopazhs.github.io/sepsis-guide/">https://tiagopazhs.github.io/NursesTraining-VolunteerProject/</a></p>
+<p>You can find the website at the following link: <a href="https://tiagopazhs.github.io/NursesTraining-VolunteerProject/">https://tiagopazhs.github.io/NursesTraining-VolunteerProject/</a></p>
 
 ## Instalation
 
