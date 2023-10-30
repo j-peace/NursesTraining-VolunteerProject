@@ -34,7 +34,7 @@
 
 ## Instalation
 
-<p>Clone the repository in your local machine:
+<p>Clone the repository:
 
 ```python
 git clone https://github.com/tiagopazhs/NursesTraining-VolunteerProject
