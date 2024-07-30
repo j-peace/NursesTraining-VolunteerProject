@@ -56,3 +56,11 @@ Start the aplication:
 ```python
 npm start
 ```
+
+## Start
+
+<p>Inside the root folder, run:
+
+```python
+npm run start
+```
