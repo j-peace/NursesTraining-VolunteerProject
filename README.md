@@ -1,7 +1,7 @@
 <h1>Training in Sepsis Treatment for Nurses <img src="https://cdn-icons-png.flaticon.com/512/1353/1353983.png" alt="red cross" style="height: 1em; margin-left: 0.4em; margin-top: 0.2em;"></h1>
 <p>This is a volunteer project aimed at creating a guide for nurses on sepsis treatment. We built the project from scratch, including the prototype, in collaboration with the founders and nurses of PPHAS New Jersey.</p>
 <h2>Purpose</h2>
-<p>Sepsis is a serious medical condition that can be life-threatening if not treated promptly. The purpose of this project is to provide nurses with a guide on sepsis treatment.</p>
+<p>Sepsis is a serious medical condition that can be life-threatening if not treated promptly. The purpose of this project is to provide nurses a guide on sepsis treatment.</p>
 <h4>Demonstration:</h4>
 <p align="center">
   <img src="https://github.com/tiagopazhs/sepsis-guide/blob/master/src/assets/sampleGif.gif" alt="sample gif" style="width: 85%">
@@ -32,7 +32,7 @@
 <h2>Website</h2>
 <p>You can find the website at the following link: <a href="https://tiagopazhs.github.io/NursesTraining-VolunteerProject/">https://tiagopazhs.github.io/NursesTraining-VolunteerProject/</a></p>
 
-## Instalation
+## Instalation and Start
 
 <p>Clone the repository:
 
@@ -57,10 +57,3 @@ Start the aplication:
 npm start
 ```
 
-## Start
-
-<p>Inside the root folder, run:
-
-```python
-npm run start
-```
