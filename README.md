@@ -1,5 +1,5 @@
 <h1>Training in Sepsis Treatment for Nurses <img src="https://cdn-icons-png.flaticon.com/512/1353/1353983.png" alt="red cross" style="height: 1em; margin-left: 0.4em; margin-top: 0.2em;"></h1>
-<p>This is a volunteer project and its purpose is create a guide for nurses on sepsis treatment. We built the project from scratch, including the prototype, in collaboration with the founders and nurses of PPHAS New Jersey.</p>
+<p>This is a volunteer project and its purpose is create a guide for nurses on sepsis treatment. We built the project from scratch, including the prototype collaborating with the founders and nurses of PPHAS New Jersey.</p>
 <h2>Purpose</h2>
 <p>Sepsis is a serious medical condition that can be life-threatening if not treated promptly. The purpose of this project is to provide nurses a guide on sepsis treatment.</p>
 <h4>Demonstration:</h4>
